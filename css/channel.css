@@ -1,0 +1,22 @@
+.channel-page .follow button{
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+.channel-page .video-section .card:hover{
+    transform: translateY(0%);
+}
+.channel-page .social-media{
+    bottom : 18px; 
+    left: 18px
+}
+.channel-page .follow{
+    bottom : 18px; 
+    right: 18px
+}
+@media (min-width: 500px) and (max-width: 590px){
+    .navbar .nav-item .nav-link{
+        font-size: 13px;
+        padding-right: 4px;
+        padding-left: 3px;
+    }
+}

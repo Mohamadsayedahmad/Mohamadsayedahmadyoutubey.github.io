@@ -7,51 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>يوتيوبي | نتائج البحث</title>
   <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/search.css">
+
+
 
 </head>
 
 <body class="mt-5 rtl">
+  <div class="layer"></div>
   <div id="top-menu">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl py-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html" style="color: red;">يوتيوبي</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <i class="fas fa-bars fa-lg" id="toggler"></i>
+          <b>
+          <a class="navbar-brand pr-1" href="index.html" style="color: black;">
+            يوتيوبي
+            <span class="video-icon p-1"><i class="fas fa-play-circle p-1"></i></span>
+
+          </a>
+         </b>
+        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-lg-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">الفيديوهات المقترحة</a>
+                <a class="nav-link  px-3 ml-1 mr-3" aria-current="page" href="index.html">الفيديوهات المقترحة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ml-lg-3" href="#">المرفوعة حديثاً</a>
+                <a class="nav-link ml-lg-3 px-3 ml-1" href="#">المرفوعة حديثاً</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">الفيديوهات الرائجة</a>
+                <a class="nav-link px-3 ml-1" href="#" tabindex="-1">الفيديوهات الرائجة</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-info text-white d-inline-block mb-2" href="#" data-toggle="modal"
-                  data-target="#loginModal">تسجيل الدخول</a>
-              </li>
+
             </ul>
-            <form class="d-flex">
+            <div class="form-inline my-2 my-lg-0">
               <input class="form-control mr-lg-2" type="search" placeholder="Search">
-              <button class="btn btn-outline-danger ml-lg-2" type="submit">ابحث</button>
-            </form>
+              <button class="btn  ml-lg-2" onclick="location.href='search.html'">ابحث</button>
+            </div>
           </div>
+          <i class="fas fa-search mr-4 search-icon"></i>
+          <a class="nav-link login" href="#" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+
         </div>
       </nav>
-
+<input type="search" class="form-control search-input" placeholder="إبحث عن ... ">
       <!-- Modal -->
-      <div class="modal fade " id="loginModal" tabindex="-1">
+      <div class="modal fade" id="loginModal">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
-              <button type="button" class="close" data-dismiss="modal"></button>
-              <span aria-hidden="true">&times;</span>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
               </button>
             </div>
             <div class="modal-body">
@@ -75,10 +85,57 @@
           </div>
         </div>
       </div>
-
-
-
-
+      <div class="row pt-4">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush pl-0">
+              <a href="index.html" class="list-group-item list-group-item-action">
+              <i class="fas fa-home mr-2 purple"></i> الصفحة الرئيسية 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-video mr-2 purple"></i> الفيديوهات المقترحة
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-upload mr-2 purple"></i> المرفوعة حديثاً 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-poll mr-2 purple"></i> الفيديوهات الرائجة  
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fab fa-envira mr-2 purple"></i> فيديوهاتي
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-clock mr-2 purple"></i> سجل المشاهدة
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-users mr-2 purple"></i> الإشتراكات 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-film mr-2 purple"></i> الأفلام والعروض 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-dice-four mr-2 purple"></i> ألعاب الفيديو 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-podcast mr-2 purple"></i> البث المباشر
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-tshirt mr-2 purple"></i> الموضة والجمال
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-graduation-cap mr-2 purple"></i> محتوى تعليمي
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-cogs mr-2 purple"></i> الإعدادات
+              </a>
+              <a href="https://academy.hsoub.com/courses/front-end-web-development/">
+              دورة تطوير واجهات المستخدم <br>
+              &copy; أكاديمية حسوب 2021
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -91,12 +148,12 @@
           حوالي 800 نتيجة
         </div>
         <div class="col-6">
-          <span><i class="fas fa-filter float-left">تصفية</i></span>
+          <span class="float-left" id="search-filters-icon"><i class="fas fa-filter ">تصفية</i></span>
         </div>
       </div>
 
       <div class="row mt-3">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 filters-column">
           <div class="text-center">تاريخ التحميل</div>
           <hr>
           <label class="d-block mb-3">
@@ -120,7 +177,7 @@
             <span>هذا العام</span>
           </label>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 filters-column">
           <div class="text-center">النوع</div>
           <hr>
           <label class="d-block mb-3">
@@ -144,7 +201,7 @@
             <span>عرض</span>
           </label>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 filters-column">
           <div class="text-center">التصنيف بحسب</div>
           <hr>
           <label class="d-block mb-3">
@@ -164,7 +221,7 @@
             <span>التقييم</span>
           </label>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-3 filters-column">
           <div class="text-center">المدة</div>
           <hr>
           <label class="d-block mb-3">
@@ -184,9 +241,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/devtools.jpg " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/devtools.jpg " alt="Card image cap">
+                <time>6:10</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -215,9 +274,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/mostaql2.png " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/mostaql2.png " alt="Card image cap">
+                <time>8:33</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -246,11 +307,13 @@
     </div>
     <div class="row">
       <div class="col-12 my-3">
-        <div class="card">
+        <div class="card ">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+          <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/khamsat3.png " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/khamsat3.png " alt="Card image cap">
+                <time>7:10</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -278,9 +341,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/frontend.jpg " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/frontend.jpg " alt="Card image cap">
+                <time>5:00</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -310,9 +375,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/khamsat1.png " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/khamsat1.png " alt="Card image cap">
+                <time>4:02</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -341,9 +408,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/mostaql.png " alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/mostaql.png " alt="Card image cap">
+                <time>10:00</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -371,9 +440,11 @@
       <div class="col-12 my-3">
         <div class="card">
           <div class="card-horizontal d-md-flex">
-            <div class="img-square-wrapper">
+            <div class="img-square-wrapper card-icons">
               <a href="watch.html">
-                <img class="" src="img/thumbnail/php.jpg" alt="Card image cap">
+                <img class="card-top-image" src="img/thumbnail/php.jpg" alt="Card image cap">
+                <time>1:20</time>
+                <i class="fas fa-play fa-2x"></i>
               </a>
             </div>
             <div class="card-body p-2">
@@ -403,6 +474,10 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/search.js"></script>
+
+
 </body>
 
 </html>
